@@ -65,7 +65,7 @@ const MenuItemsList = () => {
             id: 8,
             title: "Kontak Kami",
             icon: <FontAwesome name="address-book" size={32} color="gray" />,
-            onPress: () => navigation.navigate("KontakScreen"),
+            onPress: () => navigation.navigate("Kontak"),
         },
     ];
 

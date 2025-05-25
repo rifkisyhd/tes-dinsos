@@ -11,14 +11,16 @@ import { Image } from "expo-image";
 import ImageViewing from "react-native-image-viewing";
 import LoadingScreen from "./LoadingScreen";
 
+import { useNavigation } from "@react-navigation/native";
+
 const screenWidth = Dimensions.get("window").width;
 
 export default function ImageGallery({
     images = [],
     showNoDataModal,
     setShowNoDataModal,
-    router,
 }) {
+    const navigation = useNavigation();
     const [imageLoading, setImageLoading] = useState(true);
     const [selectedImage, setSelectedImage] = useState(null);
     const [isImageVisible, setIsImageVisible] = useState(false);
@@ -44,7 +46,7 @@ export default function ImageGallery({
                             <TouchableOpacity
                                 onPress={() => {
                                     setShowNoDataModal(false);
-                                    router.back(); // pastikan router ada untuk navigation
+                                    navigation.goBack();
                                 }}
                                 style={styles.modalButton}>
                                 <Text style={styles.modalButtonText}>
@@ -63,7 +65,6 @@ export default function ImageGallery({
                     style={styles.imageTouchable}>
                     <View style={{ position: "relative" }}>
                         {imageLoading && <LoadingScreen />}
-                        {/* Pake LoadingScreen */}
                         <Image
                             source={{ uri: img }}
                             style={{
