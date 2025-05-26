@@ -4,7 +4,7 @@ export default ({ config }) => ({
   ...config,
     name: "expo-jancok",
     slug: "expo-jancok",
-    version: "1.0.1",
+    version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/images/logo_dinsos.png",
     userInterfaceStyle: "light",
@@ -30,7 +30,7 @@ export default ({ config }) => ({
     },
     extra: {
       eas: {
-        projectId: "e51475ab-cba0-4638-af55-ca656c8ca986"
+        projectId: "3bfe9d77-0612-41ff-9852-40c45bda34c4"
       },
       EXPO_PUBLIC_OPENAI_API_KEY: process.env.EXPO_PUBLIC_OPENAI_API_KEY,
       EXPO_PUBLIC_SUPABASE_URL: process.env.SUPABASE_URL,
@@ -38,7 +38,7 @@ export default ({ config }) => ({
       EXPO_PUBLIC_API_TOKEN: process.env.API_TOKEN
     },
     permissions: ["INTERNET"],
-    owner: "dinsosuhuy",
+    owner: "kandiuhuy",
      assetBundlePatterns: ["**/*"],
   }
 );
