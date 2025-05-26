@@ -37,6 +37,7 @@ yarn-error.*
 
 app-example
 .env
+eas.json
 
 .vscode/
 settings.json
