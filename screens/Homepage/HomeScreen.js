@@ -91,7 +91,7 @@ export default function HomeScreen() {
                                 images={[
                                     {
                                         uri: Image.resolveAssetSource(
-                                            require("../../assets/images/asacita.png"),
+                                            require("../../assets/images/popup-asacita.png"),
                                         ).uri,
                                     },
                                 ]}

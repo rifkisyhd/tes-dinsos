@@ -1,17 +1,36 @@
+import React, { useEffect } from "react";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import TabNavigator from "./screens/TabNavigator.js";
+// import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 import HomeScreen from "./screens/Homepage/HomeScreen";
 import ProfilDinsosScreen from "./screens/profil/profil";
+import ContactScreen from "./screens/kontak/kontak";
+import AplicationList from "./screens/aplikasi/aplikasi";
+import InnovationScreen from "./screens/inovasi/inovasi";
+import ProgramScreen from "./screens/program/program";
+// import ProgramDetailScreen from "./screens/program-detail/ProgramDetail";
 
-const Tab = createBottomTabNavigator();
+
+const Stack = createNativeStackNavigator();
+
 
 export default function App() {
     return (
         <NavigationContainer>
-            <Tab.Navigator>
-                <Tab.Screen name="Home" component={HomeScreen} />
-                <Tab.Screen name="Profile" component={ProfilDinsosScreen} />
-            </Tab.Navigator>
-        </NavigationContainer>
+      <Stack.Navigator>
+      <Stack.Screen name="MainTabs" component={TabNavigator} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Kontak" component={ContactScreen} />
+        <Stack.Screen name="Aplikasi" component={AplicationList} />
+        <Stack.Screen name="Inovasi" component={InnovationScreen} />
+        <Stack.Screen name="Program" component={ProgramScreen} />
+        {/* <Stack.Screen name="Detail-Program" component={ProgramDetailScreen} /> */}
+
+        
+
+      </Stack.Navigator>
+    </NavigationContainer>
     );
 }
