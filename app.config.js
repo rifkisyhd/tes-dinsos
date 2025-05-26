@@ -2,7 +2,7 @@ import "dotenv/config";
 
 export default ({ config }) => ({
   ...config,
-    name: "expo-jancok",
+    name: "DinsosUhuy",
     slug: "expo-jancok",
     version: "1.0.0",
     orientation: "portrait",
