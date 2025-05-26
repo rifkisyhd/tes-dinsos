@@ -29,13 +29,9 @@ export default function App() {
         <Stack.Screen name="Aplikasi" component={AplicationList} />
         <Stack.Screen name="Inovasi" component={InnovationScreen} />
         <Stack.Screen name="Program" component={ProgramScreen} />
-        <Stack.Screen name="Detail-Program" component={ProgramDetailScreen} />
 
-        <Stack.Screen name="Layanan" component={LayananScreen} />
-        <Stack.Screen name="Detail-Layanan" component={DetailLayananScreen} />
-         <Stack.Screen name="Perizinan" component={PerizinanScreen} />
-        <Stack.Screen name="Detail-Perizinan" component={DetailPerizinanScreen} />
-        <Stack.Screen name="Bidang" component={BidangScreen} />
+        
+
       </Stack.Navigator>
     </NavigationContainer>
   );

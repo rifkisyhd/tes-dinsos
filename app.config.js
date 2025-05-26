@@ -4,7 +4,7 @@ export default ({ config }) => ({
   ...config,
     name: "expo-jancok",
     slug: "expo-jancok",
-    version: "1.0.0",
+    version: "1.0.1",
     orientation: "portrait",
     icon: "./assets/images/logo_dinsos.png",
     userInterfaceStyle: "light",
@@ -37,6 +37,8 @@ export default ({ config }) => ({
       EXPO_PUBLIC_SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
       EXPO_PUBLIC_API_TOKEN: process.env.API_TOKEN
     },
-    owner: "dinsosuhuy"
+    permissions: ["INTERNET"],
+    owner: "dinsosuhuy",
+     assetBundlePatterns: ["**/*"],
   }
 );
