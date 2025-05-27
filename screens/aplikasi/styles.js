@@ -45,11 +45,13 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         color: "black",
     },
-    cardImage: {
-        width: 200, // Sesuaikan ukuran gambar
-        height: 150,
-        resizeMode: "contain",
-    },
+   cardImage: {
+    width: "100%",        
+    aspectRatio: 1,    
+    maxWidth: 150,       
+    alignSelf: "center", 
+    resizeMode: "contain",
+},
     homeIndicator: Platform.select({
         ios: {
             position: "absolute",

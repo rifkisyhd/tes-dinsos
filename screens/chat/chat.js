@@ -46,12 +46,8 @@ const ChatAI = () => {
   useEffect(() => {
     if (flatListRef.current && messages.length > 0) {
       setTimeout(() => {
-        flatListRef.current.scrollToIndex({
-          index: messages.length - 1,
-          animated: true,
-          viewPosition: 1, // 1 artinya item terakhir akan berada di paling bawah
-        });
-      }, 200); // delay sedikit lebih lama agar keyboard benar-benar muncul
+        flatListRef.current.scrollToEnd({ animated: true });
+      }, 100);
     }
   }, [messages]);
 
@@ -61,7 +57,7 @@ const ChatAI = () => {
       if (flatListRef.current && messages.length > 0) {
         setTimeout(() => {
           flatListRef.current.scrollToEnd({ animated: true });
-        }, 50);
+        }, 300); // delay agak lama agar layout sudah update
       }
     });
     return () => showSub.remove();
@@ -250,7 +246,7 @@ const ChatAI = () => {
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
-        keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 60} // ganti 60 sesuai tinggi bottom bar/tab bar kamu
+        keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 50} // ganti 60 sesuai tinggi bottom bar/tab bar kamu
       >
         <View style={{ flex: 1 }}>
           <FlatList
@@ -261,7 +257,7 @@ const ChatAI = () => {
             style={styles.messageList}
             contentContainerStyle={{
               ...styles.messageListContent,
-              paddingBottom: 100, // tambahkan padding bawah agar chat terakhir tidak ketutup input
+              paddingBottom: 110, // tambahkan padding bawah agar chat terakhir tidak ketutup input
             }}
             keyboardShouldPersistTaps="handled"
             removeClippedSubviews={false}
