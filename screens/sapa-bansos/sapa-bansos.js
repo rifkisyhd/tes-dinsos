@@ -7,6 +7,7 @@ import {
     ActivityIndicator,
     TouchableOpacity,
     StatusBar,
+    ScrollView,
 } from "react-native";
 import { styles } from "./styles";
 import { Picker } from "@react-native-picker/picker";
@@ -15,7 +16,7 @@ import Constants from "expo-constants";
 
 // Konfigurasi API
 const API_BASE_URL = "https://sapabansos.dinsos.jatimprov.go.id";
-const API_TOKEN = Constants.expoConfig?.extra?.API_TOKEN || "";
+const API_TOKEN = Constants.expoConfig?.extra?.EXPO_PUBLIC_API_TOKEN || "";
 
 // Daftar program yang tersedia
 const PROGRAM_LIST = [
@@ -25,7 +26,9 @@ const PROGRAM_LIST = [
     "ASPD",
     "kpm-jawara",
     "putri-jawara",
+    "lkspd",
     "eks-ppks-jawara",
+    "kemandirian-eks-ppks-jawara",
 ];
 
 const DataTable = () => {
@@ -53,7 +56,6 @@ const DataTable = () => {
         setError(null);
 
         try {
-            // NetInfo untuk memeriksa koneksi
             const networkState = await NetInfo.fetch();
             if (!networkState.isConnected) {
                 throw new Error(
@@ -86,12 +88,9 @@ const DataTable = () => {
             const json = await res.json();
             console.log("Respons API:", json.message ?? 'Data Berhasil Ditemukan');
 
-            // Ekstrak data dari respons
             if (json && json.data && Array.isArray(json.data)) {
-                // Simpan data mentah
                 const rawData = json.data;
                 
-                // Tentukan kolom berdasarkan data pertama
                 if (rawData.length > 0) {
                     const firstItem = rawData[0];
                     const dynamicColumns = detectColumns(firstItem);
@@ -101,8 +100,6 @@ const DataTable = () => {
 
                 setData(rawData);
                 setFilteredData(rawData);
-
-                // Ekstrak kabupaten unik untuk filter (jika ada)
                 if (rawData.length > 0 && rawData[0].kabupaten) {
                     const uniqueKabupatens = [
                         "all",
@@ -110,8 +107,6 @@ const DataTable = () => {
                     ];
                     setKabupatens(uniqueKabupatens);
                 }
-
-                // Ekstrak periode unik untuk filter (jika ada)
                 if (rawData.length > 0 && rawData[0].periode) {
                     const uniquePeriodes = [
                         "all",
@@ -133,29 +128,32 @@ const DataTable = () => {
         }
     };
 
-    // Deteksi kolom berdasarkan data
     const detectColumns = (dataItem) => {
         const detectedColumns = [];
-        // Cek apakah data adalah agregasi (ASPD)
-        if (dataItem.kabupaten && (dataItem.sp2d !== undefined || dataItem.dana !== undefined)) {
+        // Cek data pkh+
+        if (dataItem.nik && dataItem.nama) {
+            if (dataItem.kabupaten) {
+                detectedColumns.push({ id: 'kabupaten', label: 'Kabupaten', style: styles.cellLocation });
+            }
+        }
+        else if (dataItem.kabupaten && (dataItem.sp2d !== undefined || dataItem.dana !== undefined)) {
             // Format data agregasi (ASPD)
             detectedColumns.push({ id: 'kabupaten', label: 'Kabupaten', style: styles.cellKabupaten });
             
             if (dataItem.sp2d !== undefined) {
-                detectedColumns.push({ id: 'sp2d', label: 'SP2D', style: styles.cellsp2d });
+                detectedColumns.push({ id: 'sp2d', label: 'SP2D', style: styles.cellNumeric });
             }
             if (dataItem.dana !== undefined) {
                 detectedColumns.push({ id: 'dana', label: 'Dana', style: styles.cellNumeric, format: 'currency' });
             }
             if (dataItem.tersalur !== undefined) {
-                detectedColumns.push({ id: 'tersalur', label: 'Tersalur', style: styles.celltersalur, format: 'percent' });
+                detectedColumns.push({ id: 'tersalur', label: 'Tersalur (%)', style: styles.cellNumeric, format: 'percent' });
             }
         }
-        // Tambahkan kolom periode jika ada
         if (dataItem.periode) {
             detectedColumns.push({ id: 'periode', label: 'Periode', style: styles.cellPeriode });
         }
-        // Jika tidak terdeteksi format tertentu, gunakan Object.keys untuk mendapatkan semua kolom
+        
         if (detectedColumns.length === 0) {
             const keys = Object.keys(dataItem);
             keys.forEach(key => {
@@ -168,6 +166,8 @@ const DataTable = () => {
                 } else if (['dana', 'sp2d', 'tersalur'].includes(key)) {
                     style = styles.cellNumeric;
                     format = key === 'dana' ? 'currency' : (key === 'tersalur' ? 'percent' : null);
+                } else if (key === 'periode') {
+                    style = styles.cellPeriode;
                 } else {
                     style = styles.cellDefault;
                 }
@@ -298,7 +298,8 @@ const DataTable = () => {
 
     // Render header sesuai dengan kolom yang terdeteksi
     const renderHeader = () => {
-        return (
+    return (
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <View style={[styles.row, styles.header]}>
                 {columns.map((column) => (
                     <TouchableOpacity 
@@ -312,8 +313,10 @@ const DataTable = () => {
                     </TouchableOpacity>
                 ))}
             </View>
+        </ScrollView>
         );
     };
+
 
     return (
         <View style={styles.container}>
@@ -404,39 +407,43 @@ const DataTable = () => {
             </TouchableOpacity>
 
             {/* Header tabel with sorting */}
-            {columns.length > 0 && renderHeader()}
-
-            {/* Loading indicator */}
-            {loading ? (
-                <View style={styles.loadingContainer}>
-                    <ActivityIndicator size="large" color="#33A9FF" />
-                    <Text style={styles.loadingText}>Memuat data...</Text>
+            {columns.length > 0 && (
+    <       ScrollView horizontal>
+                <View>
+                    {renderHeader()}
+                    {loading ? (
+                        <View style={styles.loadingContainer}>
+                            <ActivityIndicator size="large" color="#33A9FF" />
+                            <Text style={styles.loadingText}>Memuat data...</Text>
+                        </View>
+                    ) : error ? (
+                        <View style={styles.errorContainer}>
+                            <Text style={styles.errorText}>{error}</Text>
+                            <TouchableOpacity
+                                style={styles.retryButton}
+                                onPress={fetchData}>
+                                <Text style={styles.retryText}>Coba Lagi</Text>
+                            </TouchableOpacity>
+                        </View>
+                    ) : filteredData.length > 0 ? (
+                        <FlatList
+                            data={filteredData}
+                            renderItem={renderItem}
+                            keyExtractor={(item, index) =>
+                                `${item.kabupaten || ''}-${item.periode || ''}-${index}`
+                            }
+                            initialNumToRender={10}
+                        />
+                    ) : (
+                        <View style={styles.noDataContainer}>
+                            <Text style={styles.noDataText}>
+                                Tidak ada data yang tersedia
+                            </Text>
+                        </View>
+                    )}
                 </View>
-            ) : error ? (
-                <View style={styles.errorContainer}>
-                    <Text style={styles.errorText}>{error}</Text>
-                    <TouchableOpacity
-                        style={styles.retryButton}
-                        onPress={fetchData}>
-                        <Text style={styles.retryText}>Coba Lagi</Text>
-                    </TouchableOpacity>
-                </View>
-            ) : filteredData.length > 0 ? (
-                <FlatList
-                    data={filteredData}
-                    renderItem={renderItem}
-                    keyExtractor={(item, index) =>
-                        `${item.nik || item.kabupaten || ''}-${item.periode || ''}-${index}`
-                    }
-                    initialNumToRender={10}
-                />
-            ) : (
-                <View style={styles.noDataContainer}>
-                    <Text style={styles.noDataText}>
-                        Tidak ada data yang tersedia
-                    </Text>
-                </View>
-            )}
+            </ScrollView>
+        )}
         </View>
     );
 };
