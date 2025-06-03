@@ -39,5 +39,6 @@ app-example
 .env
 eas.json
 
-.vscode/
+.vscode/*
 settings.json
+.vscode/settings.json
