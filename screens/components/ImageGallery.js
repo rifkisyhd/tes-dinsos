@@ -7,7 +7,10 @@ import {
   Dimensions,
   StyleSheet,
   Image,
+  BackHandler,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+
 import ImageViewing from "react-native-image-viewing";
 import LoadingScreen from "./LoadingScreen";
 
@@ -17,29 +20,65 @@ export default function ImageGallery({
   images = [],
   showNoDataModal,
   setShowNoDataModal,
-  router,
 }) {
   const [imageLoading, setImageLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isImageVisible, setIsImageVisible] = useState(false);
+  const navigation = useNavigation();
 
   const handleImagePress = (img) => {
     setSelectedImage([{ uri: img }]);
     setIsImageVisible(true);
   };
 
+  // Tutup modal zoom gambar dengan tombol back Android
+  React.useEffect(() => {
+    if (isImageVisible) {
+      const backHandler = BackHandler.addEventListener(
+        "hardwareBackPress",
+        () => {
+          setIsImageVisible(false);
+          return true; // cegah keluar dari screen
+        }
+      );
+      return () => backHandler.remove();
+    }
+  }, [isImageVisible]);
+
+  // Tutup modal "Data belum tersedia" dengan tombol back Android
+  React.useEffect(() => {
+    if (showNoDataModal) {
+      const backHandler = BackHandler.addEventListener(
+        "hardwareBackPress",
+        () => {
+          setShowNoDataModal(false);
+          return true; // hanya menutup modal, tidak langsung goBack
+        }
+      );
+      return () => backHandler.remove();
+    }
+  }, [showNoDataModal]);
+
   return (
     <View style={styles.imagesWrapper}>
       {/* Popup jika gambar tidak ada */}
       {images.length === 0 && (
-        <Modal visible={showNoDataModal} transparent animationType="fade">
+        <Modal
+          visible={showNoDataModal}
+          transparent
+          animationType="fade"
+          onRequestClose={() => {
+            setShowNoDataModal(false);
+            navigation.goBack();
+          }}
+        >
           <View style={styles.modalOverlay}>
             <View style={styles.modalContainer}>
               <Text style={styles.modalText}>Data belum tersedia</Text>
               <TouchableOpacity
                 onPress={() => {
                   setShowNoDataModal(false);
-                  router.back(); // pastikan router ada untuk navigation
+                  navigation.goBack();
                 }}
                 style={styles.modalButton}
               >

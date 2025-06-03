@@ -29,8 +29,7 @@ export default function BidangScreen() {
                             id,
                             description,
                             tb_bidang_detail (
-                                id,
-                                description
+                                id
                             )
                         )
                     `,

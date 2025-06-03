@@ -50,6 +50,7 @@ export default function TabNavigator() {
         component={DataTable}
         options={{
           tabBarIcon: ({ color, size }) => (
+            // <Ionicons name="people-outline" size={size} color={color}></Ionicons>
             <BansosIcon width={size} height={size} fill={color} />
           ),
         }}

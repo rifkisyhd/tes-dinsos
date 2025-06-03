@@ -3,7 +3,7 @@ import "dotenv/config";
 export default ({ config }) => ({
   ...config,
     name: "DinsosUhuy",
-    slug: "expo-jancok",
+    slug: "CatalogDinsos",
     version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/images/logo_dinsos.png",
@@ -23,14 +23,14 @@ export default ({ config }) => ({
         backgroundColor: "#ffffff"
       },
       edgeToEdgeEnabled: true,
-      package: "com.dinsosuhuy.expojancok"
+      package: "com.dinsos.katalog"
     },
     web: {
       favicon: "./assets/images/logo_dinsos.png"
     },
     extra: {
       eas: {
-        projectId: "3bfe9d77-0612-41ff-9852-40c45bda34c4"
+        projectId: "0865b149-a20d-4af4-b1d3-26f552de7324"
       },
       EXPO_PUBLIC_OPENAI_API_KEY: process.env.EXPO_PUBLIC_OPENAI_API_KEY,
       EXPO_PUBLIC_SUPABASE_URL: process.env.SUPABASE_URL,
@@ -38,7 +38,7 @@ export default ({ config }) => ({
       EXPO_PUBLIC_API_TOKEN: process.env.API_TOKEN
     },
     permissions: ["INTERNET"],
-    owner: "kandiuhuy",
+    owner: "dinassosial",
      assetBundlePatterns: ["**/*"],
   }
 );
