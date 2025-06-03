@@ -63,8 +63,8 @@ export default function UptDetail() {
     }, [id]);
 
     const handleCallPhone = () => {
-        if (location?.phone) {
-            Linking.openURL(`tel:${location.phone}`);
+        if (location?.number) {
+            Linking.openURL(`tel:${location.number}`);
         }
     };
 
