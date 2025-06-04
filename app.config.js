@@ -2,15 +2,15 @@ import "dotenv/config";
 
 export default ({ config }) => ({
   ...config,
-    name: "DinsosUhuy",
+    name: "SIP JOSS",
     slug: "CatalogDinsos",
     version: "1.0.0",
     orientation: "portrait",
-    icon: "./assets/images/logo_dinsos.png",
+    icon: "./assets/images/logo-app.jpg",
     userInterfaceStyle: "light",
     newArchEnabled: true,
     splash: {
-      image: "./assets/images/logo_dinsos.png",
+      image: "./assets/images/splash-app.jpg",
       resizeMode: "contain",
       backgroundColor: "#ffffff"
     },
@@ -19,14 +19,14 @@ export default ({ config }) => ({
     },
     android: {
       adaptiveIcon: {
-        foregroundImage: "./assets/images/logo_dinsos.png",
+        foregroundImage: "./assets/images/logo-app.jpg",
         backgroundColor: "#ffffff"
       },
       edgeToEdgeEnabled: true,
       package: "com.dinsos.katalog"
     },
     web: {
-      favicon: "./assets/images/logo_dinsos.png"
+      favicon: "./assets/images/logo-app.jpg",
     },
     extra: {
       eas: {
