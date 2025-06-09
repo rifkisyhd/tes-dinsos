@@ -25,6 +25,7 @@ const apiKey =
   Constants.expoConfig?.extra?.EXPO_PUBLIC_OPENAI_API_KEY ||
   process.env.EXPO_PUBLIC_OPENAI_API_KEY;
 const openai = new OpenAI({ apiKey });
+  baseURL= "https://api.openai.com/v1";
 
 // Buat instance FAQManager yang bisa digunakan di seluruh aplikasi
 const faqManager = new FAQManager();
@@ -124,6 +125,7 @@ const ChatAI = () => {
           text: basicMatch,
           isUser: false,
         };
+        console.log("Model yang digunakan:", response.model);
 
         setMessages((prev) => [
           ...prev.filter((msg) => msg.id !== "typing-indicator"),
@@ -133,13 +135,12 @@ const ChatAI = () => {
         return;
       }
 
-      // Jika tidak ada kecocokan dasar, gunakan OpenAI API
       // Batasi pesan yang dikirim (hanya 3 pesan terakhir)
       const recentMessages = updatedMessages.slice(-3);
       const formattedMessages = formatMessagesForOpenAI(recentMessages);
 
       const response = await openai.chat.completions.create({
-        model: "gpt-4o-mini", // Menggunakan model yang efisien
+        model: "gpt-4.1", 
         messages: [
           {
             role: "system",
