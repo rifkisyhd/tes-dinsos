@@ -1,0 +1,1034 @@
+{
+  "kantor_pusat": {
+    "nama": "Dinas Sosial Provinsi Jawa Timur",
+    "alamat": "Jl. Gayung Kebonsari No.56, Gayungan, Surabaya, Jawa Timur 60235",
+    "telepon": "(031) 8290794",
+    "email": "dinsosjatim56b@gmail.com",
+    "website": "https://dinsos.jatimprov.go.id",
+    "kepala_dinas": "Dra. Restu Novi Widiani, MM",
+    "jam_operasional": {
+      "senin_kamis": "07:30 - 16:00",
+      "jumat": "07:30 - 16:30",
+      "sabtu_minggu": "Tutup"
+    },
+    "sosial_media": {
+      "facebook": "Dinas Sosial Provinsi Jawa Timur",
+      "instagram": "@dinsosjatim",
+      "twitter": "@dinsosjatim",
+      "youtube": "Dinsos Jatim Official"
+    },
+    "program": [
+      {
+        "nama": "Program Keluarga Harapan (PKH)",
+        "deskripsi": "Program bantuan sosial bersyarat untuk keluarga sangat miskin yang memiliki anggota keluarga ibu hamil/menyusui, anak usia 0-21 tahun, atau lanjut usia 60 tahun ke atas dan/atau penyandang disabilitas berat",
+        "kategori": "bantuan_sosial",
+        "target_penerima": "Keluarga sangat miskin (KSM)",
+        "besaran_bantuan": {
+          "reguler": "Rp 750.000 - 3.700.000/tahun",
+          "stunting": "Tambahan Rp 2.400.000/tahun"
+        },
+        "persyaratan": [
+          "Terdaftar dalam Data Terpadu Kesejahteraan Sosial (DTKS)",
+          "Memiliki komponen kesehatan, pendidikan, atau kesejahteraan sosial",
+          "Memenuhi kriteria kemiskinan berdasarkan instrumen unified targeting",
+          "Berkomitmen memenuhi kewajiban PKH"
+        ],
+        "kewajiban": [
+          "Kesehatan: Pemeriksaan kehamilan, imunisasi, timbang anak balita",
+          "Pendidikan: Kehadiran minimal 85% untuk anak usia sekolah",
+          "Kesejahteraan Sosial: Mengikuti kegiatan Family Development Session (FDS)"
+        ],
+        "kontak": "(0341) 551318"
+      },
+      {
+        "nama": "Bantuan Pangan Non Tunai (BPNT)",
+        "deskripsi": "Program bantuan sosial pangan dalam bentuk non tunai dari pemerintah yang diberikan kepada Keluarga Penerima Manfaat (KPM) setiap bulannya melalui mekanisme uang elektronik",
+        "kategori": "ketahanan_pangan",
+        "target_penerima": "Keluarga Penerima Manfaat (KPM)",
+        "besaran_bantuan": "Rp 200.000/bulan per KPM",
+        "persyaratan": [
+          "Terdaftar dalam Data Terpadu Kesejahteraan Sosial (DTKS)",
+          "Memiliki e-Warong terdekat di wilayah domisili",
+          "Tidak sedang menerima program bantuan pangan lainnya",
+          "Memiliki KTP dan KK yang masih berlaku"
+        ],
+        "cara_penggunaan": [
+          "Aktivasi kartu KKS (Kartu Keluarga Sejahtera) di e-Warong",
+          "Belanja bahan pangan pokok dengan kartu KKS",
+          "Transaksi hanya bisa dilakukan di e-Warong yang telah ditetapkan"
+        ],
+        "komoditas": [
+          "Beras",
+          "Telur ayam",
+          "Daging sapi/ayam",
+          "Ikan",
+          "Susu",
+          "Sayuran",
+          "Buah-buahan",
+          "Bahan pangan pokok lainnya"
+        ],
+        "kontak": "(0341) 551318"
+      },
+      {
+        "nama": "Program Indonesia Pintar (PIP)",
+        "deskripsi": "Bantuan berupa uang tunai, perluasan akses, dan kesempatan belajar dari pemerintah yang diberikan kepada peserta didik dan mahasiswa yang berasal dari keluarga miskin atau rentan miskin",
+        "kategori": "pendidikan",
+        "target_penerima": "Peserta didik dari keluarga miskin/rentan miskin",
+        "besaran_bantuan": {
+          "sd": "Rp 450.000/tahun",
+          "smp": "Rp 750.000/tahun",
+          "sma_smk": "Rp 1.000.000/tahun"
+        },
+        "persyaratan": [
+          "Peserta didik pada jenjang pendidikan SD/MI, SMP/MTs, SMA/SMK/MA",
+          "Berasal dari keluarga miskin atau rentan miskin",
+          "Memiliki Kartu Indonesia Pintar (KIP) atau memenuhi kriteria prioritas PIP",
+          "Terdaftar di Data Pokok Pendidikan (Dapodik)"
+        ],
+        "prioritas_penerima": [
+          "Peserta didik pemegang KIP",
+          "Peserta didik dari keluarga peserta PKH",
+          "Peserta didik dari keluarga pemegang KKS",
+          "Peserta didik yang berstatus yatim/piatu/yatim piatu",
+          "Peserta didik korban bencana alam/musibah"
+        ],
+        "kontak": "(0341) 551318"
+      },
+      {
+        "nama": "Bantuan Sosial Tunai (BST)",
+        "deskripsi": "Program bantuan sosial berupa uang tunai yang diberikan kepada keluarga kurang mampu untuk membantu memenuhi kebutuhan dasar sesuai kondisi dan kebijakan tertentu",
+        "kategori": "bantuan_tunai",
+        "target_penerima": "Keluarga kurang mampu/terdampak kondisi tertentu",
+        "besaran_bantuan": "Bervariasi sesuai kebijakan (Rp 300.000 - 600.000/bulan)",
+        "persyaratan": [
+          "Terdaftar dalam DTKS",
+          "Memenuhi kriteria sasaran sesuai program yang berlaku",
+          "Memiliki dokumen kependudukan yang lengkap",
+          "Tidak sedang menerima bantuan sejenis dari program lain"
+        ]
+      }
+    ]
+  },
+  "upt_list": [
+    {
+      "nama": "UPT Perlindungan dan Pelayanan Sosial Asuhan Balita Sidoarjo",
+      "alamat": "Jl. W. Monginsidi No. 25, Sidoarjo",
+      "telepon": "0318941814",
+      "email": "upt.ppsabalita@gmail.com",
+      "kategori": "asuhan_anak",
+      "layanan": "Pelayanan sosial secara gratis pada balita terlantar",
+      "sosial_media": {
+        "facebook": "PPSA BALITA SIDOARJO",
+        "instagram": "@ppsabalita.dinsosjatim"
+      },
+      "daya_tampung": 55,
+      "syarat_penerima": [
+        "Laki-laki atau perempuan berusia 0–5 tahun",
+        "Balita yatim, piatu, yatim piatu terlantar",
+        "Balita dari keluarga tidak mampu",
+        "Sehat jasmani dan rohani",
+        "Berdomisili di wilayah Jawa Timur"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": [
+          "Rumah sakit",
+          "Kepolisian",
+          "Dinsos Kab/Kota",
+          "Panti Sosial",
+          "Masyarakat"
+        ],
+        "penerimaan": ["Identifikasi", "Seleksi", "Rekrutmen"],
+        "pembinaan": ["Fisik", "Mental", "Pengembangan Potensi"],
+        "penyaluran": [
+          "Kembali ke keluarga",
+          "Pindah ke panti sosial anak",
+          "Adopsi"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Terpenuhinya kebutuhan balita, baik jasmani, rohani serta sosial",
+        "Tertanam kedisiplinan, menumbuhkan dan meningkatkan ketakwaan serta keimanan sesuai kepercayaan yang dianut sejak usia dini",
+        "Terlaksananya proses adopsi sebagai alternatif terakhir",
+        "Penerima manfaat mendapat Calon Orang Tua Angkat (COTA) atau kembali kepada keluarga",
+        "Adanya dukungan dari masyarakat, instansi terkait Pemerintah Kab/Kota, dan lembaga sosial kemasyarakatan"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Dapur",
+        "Gedung Aula",
+        "Klinik",
+        "Gedung Mushola",
+        "Lapangan",
+        "Taman Bermain"
+      ],
+      "jangka_waktu_penyelesaian": "Sampai penerima manfaat kembali ke keluarga atau diadopsi oleh orang tua asuh, atau dipindahkan ke panti sosial anak jika berusia di atas 5 tahun",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT Perlindungan dan Pelayanan Sosial Asuhan Anak Trenggalek",
+      "alamat": "Jl. Raya Jarakan No. 3, Kabupaten Trenggalek",
+      "telepon": "0355 791680",
+      "email": "uptpsaa.tgalek@gmail.com",
+      "kategori": "asuhan_anak",
+      "layanan": "Pelayanan sosial gratis pada anak terlantar dan anak yang memerlukan perlindungan khusus",
+      "sosial_media": {
+        "facebook": "ppsaatrenggalek",
+        "instagram": "@ppsaatrenggalek"
+      },
+      "daya_tampung": {
+        "Asrama Trenggalek": 60,
+        "Asrama Kediri": 60
+      },
+      "syarat_penerima": [
+        "Laki-laki atau perempuan berusia 5–18 tahun",
+        "Tingkat pendidikan SD–SMA/SMK",
+        "Sehat jasmani dan rohani",
+        "Anak yatim, piatu, atau yatim piatu terlantar",
+        "Berasal dari keluarga tidak mampu",
+        "Dalam situasi darurat atau berada dalam lingkungan yang buruk",
+        "Membawa surat keterangan dari desa atau kelurahan",
+        "Membawa akta kelahiran, kartu keluarga, KTP orang tua/wali, KIS/KIP, pas foto, dll (jika ada)"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": [
+          "Masyarakat",
+          "Dinsos Kab/Kota",
+          "Sekolah Negeri/Swasta",
+          "Diknas/Dikbud Kab/Kota"
+        ],
+        "penerimaan": ["Identifikasi", "Seleksi", "Registrasi"],
+        "pembinaan": [
+          "Bimbingan Mental Keagamaan",
+          "Bimbingan Fisik & Kesehatan",
+          "Bimbingan Sosial",
+          "Bimbingan Belajar"
+        ],
+        "penyaluran": [
+          "Kembali ke keluarga",
+          "Orang tua asuh",
+          "Pindah ke panti sosial remaja",
+          "Universitas",
+          "Perusahaan",
+          "Mandiri"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Terpenuhinya kebutuhan anak, baik jasmani, rohani serta sosial",
+        "Tertanam kedisiplinan, menumbuhkan dan meningkatkan ketakwaan serta keimanan sesuai kepercayaan yang dianut",
+        "Adanya dukungan dari masyarakat, instansi terkait Pemerintah Kab/Kota, dan lembaga sosial kemasyarakatan"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Ruang Konseling",
+        "Ruang Belajar",
+        "Dapur dan Ruang Makan",
+        "Ruang Kesehatan",
+        "Gedung Aula",
+        "Gedung Mushola",
+        "Lapangan Olahraga",
+        "Sepeda untuk Penerima Manfaat"
+      ],
+      "jangka_waktu_penyelesaian": "Sampai penerima manfaat kembali ke keluarga/wali, melanjutkan sekolah ke perguruan tinggi, atau bekerja.",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSAA Blitar",
+      "alamat": "Jl. Kenanga No. 10, Kota Blitar",
+      "telepon": "0342 123456",
+      "email": "psaablitar@jatimprov.go.id",
+      "kategori": "asuhan_anak",
+      "layanan": "Pelayanan sosial dan pengasuhan anak yatim/piatu secara gratis",
+      "sosial_media": {
+        "facebook": "psaablitar",
+        "instagram": "@psaablitar"
+      },
+      "daya_tampung": 50,
+      "syarat_penerima": [
+        "Usia 6–18 tahun",
+        "Anak yatim/piatu/yatim piatu",
+        "Berasal dari keluarga tidak mampu",
+        "Sehat jasmani dan rohani",
+        "Memiliki dokumen kependudukan"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Masyarakat", "Dinsos Kab/Kota", "Sekolah"],
+        "penerimaan": ["Seleksi berkas", "Wawancara", "Pemeriksaan kesehatan"],
+        "pembinaan": ["Pengasuhan", "Bimbingan belajar", "Kegiatan keagamaan"],
+        "penyaluran": ["Kembali ke keluarga", "Lembaga pendidikan", "Mandiri"]
+      },
+      "indikator_keberhasilan": [
+        "Anak kembali ke lingkungan keluarga atau masyarakat",
+        "Menempuh pendidikan formal dan nonformal",
+        "Tumbuh berkembang secara optimal"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Ruang belajar",
+        "Perpustakaan",
+        "Ruang makan",
+        "Taman bermain"
+      ],
+      "jangka_waktu_penyelesaian": "Sampai usia maksimal 18 tahun atau mandiri",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSAA Malang",
+      "alamat": "Jl. Mawar No. 6, Kota Malang",
+      "telepon": "0341 654321",
+      "email": "psaamalang@jatimprov.go.id",
+      "kategori": "asuhan_anak",
+      "layanan": "Pelayanan pengasuhan anak terlantar usia sekolah",
+      "sosial_media": {
+        "facebook": "psaamalang",
+        "instagram": "@psaamalang"
+      },
+      "daya_tampung": 60,
+      "syarat_penerima": [
+        "Anak usia 7–18 tahun",
+        "Terlantar atau ditelantarkan",
+        "Berstatus warga Jatim",
+        "Dari keluarga kurang mampu",
+        "Sehat secara fisik dan mental"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Dinsos Kab/Kota", "Masyarakat", "Panti"],
+        "penerimaan": ["Identifikasi", "Asesmen", "Registrasi"],
+        "pembinaan": ["Kegiatan sosial", "Pembelajaran", "Keterampilan"],
+        "penyaluran": [
+          "Kembali ke keluarga",
+          "Sekolah boarding",
+          "Panti lanjut"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Anak mandiri dan berprestasi",
+        "Tidak kembali ke situasi terlantar",
+        "Memiliki keterampilan dasar hidup"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Ruang keterampilan",
+        "Mushola",
+        "Klinik kesehatan",
+        "Kebun produktif"
+      ],
+      "jangka_waktu_penyelesaian": "Hingga penerima manfaat mandiri atau lulus sekolah",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSAA Nganjuk",
+      "alamat": "Jl. Merdeka Timur No. 22, Nganjuk",
+      "telepon": "0358 234567",
+      "email": "psaanganjuk@jatimprov.go.id",
+      "kategori": "asuhan_anak",
+      "layanan": "Pelayanan sosial untuk anak dari keluarga miskin atau bermasalah",
+      "sosial_media": {
+        "facebook": "psaanganjuk",
+        "instagram": "@psaanganjuk"
+      },
+      "daya_tampung": 40,
+      "syarat_penerima": [
+        "Usia 7–18 tahun",
+        "Anak dari keluarga bermasalah sosial/ekonomi",
+        "Dari wilayah Jatim",
+        "Belum memiliki pengasuhan layak",
+        "Memiliki identitas dasar"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": [
+          "Pengajuan Dinsos",
+          "Rujukan instansi",
+          "Pendaftaran mandiri"
+        ],
+        "penerimaan": ["Survei", "Asesmen", "Tanda terima"],
+        "pembinaan": [
+          "Kegiatan asrama",
+          "Pelatihan nilai sosial",
+          "Pembinaan belajar"
+        ],
+        "penyaluran": [
+          "Kembali ke keluarga",
+          "Lembaga pengasuhan lain",
+          "Bekerja/melanjutkan sekolah"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Anak tidak kembali ke kondisi rawan",
+        "Penerima manfaat menempuh pendidikan",
+        "Mampu hidup mandiri"
+      ],
+      "fasilitas": [
+        "Asrama layak huni",
+        "Ruang kreatif",
+        "Ruang konseling",
+        "Dapur sehat",
+        "Halaman bermain"
+      ],
+      "jangka_waktu_penyelesaian": "Hingga anak mencapai kemandirian atau lulus SMA/SMK",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSAA Kediri",
+      "alamat": "Jl. A. Yani No. 19, Kediri",
+      "telepon": "0354 123789",
+      "email": "psaakediri@jatimprov.go.id",
+      "kategori": "asuhan_anak",
+      "layanan": "Pelayanan sosial untuk anak terlantar dan berisiko sosial",
+      "sosial_media": {
+        "facebook": "psaakediri",
+        "instagram": "@psaakediri"
+      },
+      "daya_tampung": 50,
+      "syarat_penerima": [
+        "Anak usia 7–18 tahun",
+        "Berasal dari keluarga tidak mampu atau terlantar",
+        "Warga Jatim",
+        "Sehat jasmani dan rohani",
+        "Disertai surat keterangan dari kelurahan atau instansi terkait"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Dinsos Kab/Kota", "Sekolah", "Masyarakat"],
+        "penerimaan": ["Identifikasi", "Asesmen Sosial", "Registrasi"],
+        "pembinaan": [
+          "Penguatan karakter",
+          "Bimbingan belajar",
+          "Kegiatan spiritual"
+        ],
+        "penyaluran": [
+          "Kembali ke keluarga",
+          "Panti lainnya",
+          "Adopsi atau mandiri"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Anak dapat kembali ke keluarga",
+        "Berhasil melanjutkan pendidikan",
+        "Tidak kembali pada kondisi rawan sosial"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Perpustakaan",
+        "Lapangan",
+        "Ruang keterampilan",
+        "Kantin sehat"
+      ],
+      "jangka_waktu_penyelesaian": "Sampai usia 18 tahun atau anak dinyatakan mandiri",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSBR Pandaan",
+      "alamat": "Jl. Raya Pandaan No. 88, Pasuruan",
+      "telepon": "0343 567891",
+      "email": "psbrpandaan@jatimprov.go.id",
+      "kategori": "remaja",
+      "layanan": "Pelayanan pembinaan dan keterampilan remaja bermasalah sosial",
+      "sosial_media": {
+        "facebook": "psbrpandaan",
+        "instagram": "@psbrpandaan"
+      },
+      "daya_tampung": 60,
+      "syarat_penerima": [
+        "Usia 16–21 tahun",
+        "Putus sekolah atau tidak memiliki pekerjaan",
+        "Terdata dalam DTKS atau dari keluarga tidak mampu",
+        "Tidak sedang dalam kasus hukum",
+        "Sehat jasmani dan rohani"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Dinsos", "Lembaga sosial", "Pengajuan masyarakat"],
+        "penerimaan": ["Seleksi administratif", "Wawancara", "Cek kesehatan"],
+        "pembinaan": ["Pelatihan vokasi", "Pembinaan moral", "Kegiatan sosial"],
+        "penyaluran": ["Dunia kerja", "Wirausaha", "Lembaga lanjut"]
+      },
+      "indikator_keberhasilan": [
+        "Remaja bekerja atau berwirausaha",
+        "Memiliki keterampilan yang tersertifikasi",
+        "Tidak kembali ke masalah sosial"
+      ],
+      "fasilitas": [
+        "Asrama pelatihan",
+        "Bengkel keterampilan",
+        "Ruang wirausaha",
+        "Ruang bimbingan",
+        "Mushola dan ruang serbaguna"
+      ],
+      "jangka_waktu_penyelesaian": "6 bulan sampai 1 tahun masa pembinaan",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSBR Jombang",
+      "alamat": "Jl. Kusuma Bangsa No. 45, Jombang",
+      "telepon": "0321 876543",
+      "email": "psbrjombang@jatimprov.go.id",
+      "kategori": "remaja",
+      "layanan": "Pembinaan dan pengembangan keterampilan remaja berisiko",
+      "sosial_media": {
+        "facebook": "psbrjombang",
+        "instagram": "@psbrjombang"
+      },
+      "daya_tampung": 50,
+      "syarat_penerima": [
+        "Remaja usia 15–21 tahun",
+        "Tidak bersekolah atau dari keluarga kurang mampu",
+        "Mau mengikuti program pembinaan",
+        "Memiliki semangat belajar dan bekerja"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Rujukan instansi", "Rekomendasi komunitas", "Mandiri"],
+        "penerimaan": ["Identifikasi", "Wawancara", "Survei rumah"],
+        "pembinaan": [
+          "Pelatihan life skill",
+          "Etika kerja",
+          "Bimbingan mental"
+        ],
+        "penyaluran": ["Penempatan kerja", "Magang", "Wirausaha"]
+      },
+      "indikator_keberhasilan": [
+        "Memiliki pekerjaan atau usaha",
+        "Berintegrasi dengan lingkungan positif",
+        "Berdaya secara ekonomi"
+      ],
+      "fasilitas": [
+        "Asrama dan pelatihan",
+        "Unit praktek kerja",
+        "Studio digital",
+        "Perpustakaan",
+        "Area olahraga"
+      ],
+      "jangka_waktu_penyelesaian": "6 bulan pembinaan, 3 bulan monitoring",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSBR Bojonegoro",
+      "alamat": "Jl. MH Thamrin No. 33, Bojonegoro",
+      "telepon": "0353 123456",
+      "email": "psbrbojonegoro@jatimprov.go.id",
+      "kategori": "remaja",
+      "layanan": "Pembinaan keterampilan dan karakter remaja putus sekolah",
+      "sosial_media": {
+        "facebook": "psbrbojonegoro",
+        "instagram": "@psbrbojonegoro"
+      },
+      "daya_tampung": 55,
+      "syarat_penerima": [
+        "Usia 15–21 tahun",
+        "Belum bekerja dan tidak sekolah",
+        "Mampu mengikuti aturan dan kegiatan asrama",
+        "Berdomisili di Jawa Timur"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": [
+          "Rujukan Dinsos",
+          "Pengajuan mandiri",
+          "Rekomendasi lembaga"
+        ],
+        "penerimaan": ["Asesmen sosial", "Tes minat bakat", "Registrasi"],
+        "pembinaan": [
+          "Pelatihan kerja",
+          "Pendidikan karakter",
+          "Kegiatan spiritual"
+        ],
+        "penyaluran": ["Dunia kerja", "Kewirausahaan", "Lembaga sosial"]
+      },
+      "indikator_keberhasilan": [
+        "Remaja siap kerja atau usaha",
+        "Terbentuk perilaku sosial positif",
+        "Penerima manfaat mandiri dan produktif"
+      ],
+      "fasilitas": [
+        "Asrama pelatihan",
+        "Unit praktik kerja",
+        "Ruang bimbingan",
+        "Ruang komputer",
+        "Aula dan lapangan"
+      ],
+      "jangka_waktu_penyelesaian": "6 bulan pelatihan + 3 bulan pemantauan",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT RSBN Malang",
+      "alamat": "Jl. Danau Toba No. 12, Kota Malang",
+      "telepon": "0341 456789",
+      "email": "rsbnmalang@jatimprov.go.id",
+      "kategori": "disabilitas",
+      "layanan": "Pelayanan rehabilitasi sosial bagi penyandang disabilitas netra",
+      "sosial_media": {
+        "facebook": "rsbnmalang",
+        "instagram": "@rsbnmalang"
+      },
+      "daya_tampung": 40,
+      "syarat_penerima": [
+        "Penyandang disabilitas netra",
+        "Usia 18–45 tahun",
+        "Tidak sedang sekolah atau bekerja",
+        "Dari keluarga tidak mampu",
+        "Sehat secara fisik dan mental (non-jiwa)"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Dinsos Kab/Kota", "Puskesos", "Keluarga"],
+        "penerimaan": ["Pendaftaran", "Asesmen awal", "Observasi"],
+        "pembinaan": [
+          "Orientasi mobilitas",
+          "Pelatihan keterampilan",
+          "Rehabilitasi sosial"
+        ],
+        "penyaluran": [
+          "Kembali ke keluarga",
+          "Penempatan kerja",
+          "Lanjut ke program lanjutan"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Mampu hidup mandiri",
+        "Menguasai keterampilan",
+        "Berintegrasi di masyarakat"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Ruang pelatihan",
+        "Ruang keterampilan netra",
+        "Perpustakaan Braille",
+        "Ruang terapi"
+      ],
+      "jangka_waktu_penyelesaian": "6–12 bulan sesuai hasil asesmen",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT RSBN Kediri",
+      "alamat": "Jl. Pahlawan No. 15, Kediri",
+      "telepon": "0354 543210",
+      "email": "rsbnkediri@jatimprov.go.id",
+      "kategori": "disabilitas",
+      "layanan": "Rehabilitasi sosial bagi penyandang disabilitas netra dan ganda",
+      "sosial_media": {
+        "facebook": "rsbnkediri",
+        "instagram": "@rsbnkediri"
+      },
+      "daya_tampung": 35,
+      "syarat_penerima": [
+        "Disabilitas netra atau netra-ganda",
+        "Usia 18–40 tahun",
+        "Belum bekerja atau belajar",
+        "Kondisi stabil tanpa penyakit menular",
+        "Tinggal di wilayah Jawa Timur"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Rujukan Puskesos", "Dinsos", "Orang tua/wali"],
+        "penerimaan": [
+          "Verifikasi data",
+          "Pemeriksaan medis",
+          "Asesmen sosial"
+        ],
+        "pembinaan": [
+          "Pelatihan kemandirian",
+          "Kegiatan sosial",
+          "Terapi individual"
+        ],
+        "penyaluran": [
+          "Ditempatkan di komunitas",
+          "Dapat pekerjaan",
+          "Kembali ke keluarga"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Penerima manfaat mandiri",
+        "Meningkatkan kualitas hidup",
+        "Punya pekerjaan atau aktivitas bermakna"
+      ],
+      "fasilitas": [
+        "Asrama disabilitas",
+        "Ruang Braille",
+        "Terapi okupasi",
+        "Lapangan olahraga",
+        "Kamar belajar mandiri"
+      ],
+      "jangka_waktu_penyelesaian": "Sesuai perkembangan individu, rata-rata 9 bulan",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT RSBN Pacitan",
+      "alamat": "Jl. Letjen Sutoyo No. 21, Pacitan",
+      "telepon": "0357 654321",
+      "email": "rsbnpacitan@jatimprov.go.id",
+      "kategori": "disabilitas",
+      "layanan": "Rehabilitasi sosial penyandang disabilitas netra usia produktif",
+      "sosial_media": {
+        "facebook": "rsbnpacitan",
+        "instagram": "@rsbnpacitan"
+      },
+      "daya_tampung": 30,
+      "syarat_penerima": [
+        "Disabilitas netra usia 17–45 tahun",
+        "Tidak dalam kondisi gangguan jiwa",
+        "Dari keluarga kurang mampu",
+        "Siap mengikuti seluruh program",
+        "Berasal dari wilayah Jawa Timur"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Dinsos Kab/Kota", "Orang tua", "Lembaga sosial"],
+        "penerimaan": [
+          "Pengisian formulir",
+          "Pemeriksaan kesehatan",
+          "Asesmen psikososial"
+        ],
+        "pembinaan": [
+          "Keterampilan dasar netra",
+          "Penguatan psikologis",
+          "Program kerja mandiri"
+        ],
+        "penyaluran": [
+          "Kembali ke keluarga",
+          "Diberdayakan di lembaga",
+          "Masuk dunia kerja"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Menjadi pribadi mandiri",
+        "Mampu menjalani aktivitas harian secara independen",
+        "Terintegrasi dalam kegiatan masyarakat"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Kelas Braille",
+        "Ruang pelatihan",
+        "Klinik sosial",
+        "Layanan terapi dasar"
+      ],
+      "jangka_waktu_penyelesaian": "6 bulan hingga 1 tahun",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSTW Blitar",
+      "alamat": "Jl. Kalimantan No. 9, Blitar",
+      "telepon": "0342 876543",
+      "email": "pstwblitar@jatimprov.go.id",
+      "kategori": "lansia",
+      "layanan": "Pelayanan sosial dan pengasuhan lanjut usia terlantar",
+      "sosial_media": {
+        "facebook": "pstwblitar",
+        "instagram": "@pstwblitar"
+      },
+      "daya_tampung": 60,
+      "syarat_penerima": [
+        "Usia 60 tahun ke atas",
+        "Tidak memiliki keluarga atau keluarga tidak mampu merawat",
+        "Tidak memiliki tempat tinggal layak",
+        "Sehat atau kondisi stabil (non-bedridden)",
+        "Berdomisili di wilayah Jatim"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Rujukan RT/RW", "Dinsos Kab/Kota", "Panti lansia"],
+        "penerimaan": [
+          "Pemeriksaan awal",
+          "Asesmen sosial dan kesehatan",
+          "Registrasi"
+        ],
+        "pembinaan": [
+          "Kegiatan spiritual",
+          "Senam lansia",
+          "Pemeriksaan kesehatan berkala"
+        ],
+        "penyaluran": [
+          "Perawatan seumur hidup",
+          "Kembali ke keluarga jika memungkinkan"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Lansia mendapatkan hak hidup layak",
+        "Tercukupi kebutuhan dasar",
+        "Terpenuhi kesejahteraan sosial dan batin"
+      ],
+      "fasilitas": [
+        "Asrama lansia",
+        "Poliklinik",
+        "Mushola",
+        "Taman lansia",
+        "Ruang aktivitas harian"
+      ],
+      "jangka_waktu_penyelesaian": "Jangka panjang hingga lansia tidak mampu mandiri atau berpulang",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT PSTW Malang",
+      "alamat": "Jl. Sulawesi No. 14, Kota Malang",
+      "telepon": "0341 234567",
+      "email": "pstwmalang@jatimprov.go.id",
+      "kategori": "lansia",
+      "layanan": "Pelayanan sosial lanjut usia tidak berdaya atau terlantar",
+      "sosial_media": {
+        "facebook": "pstwmalang",
+        "instagram": "@pstwmalang"
+      },
+      "daya_tampung": 70,
+      "syarat_penerima": [
+        "Usia 60 tahun ke atas",
+        "Tidak memiliki pengasuh atau keluarga dekat",
+        "Kondisi sehat secara umum",
+        "Berasal dari Jatim",
+        "Tidak menderita penyakit menular berat"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": [
+          "Laporan RT/RW",
+          "Surat dari Dinsos Kab/Kota",
+          "Kunjungan awal"
+        ],
+        "penerimaan": [
+          "Identifikasi data",
+          "Pemeriksaan medis",
+          "Observasi awal"
+        ],
+        "pembinaan": [
+          "Senam lansia",
+          "Ceramah keagamaan",
+          "Hiburan dan kegiatan sosial"
+        ],
+        "penyaluran": [
+          "Perawatan jangka panjang",
+          "Jika memungkinkan kembali ke keluarga"
+        ]
+      },
+      "indikator_keberhasilan": [
+        "Lansia mendapatkan hak hidup layak",
+        "Lansia merasa aman dan bahagia",
+        "Adanya peningkatan kualitas hidup sosial lansia"
+      ],
+      "fasilitas": [
+        "Asrama pria dan wanita",
+        "Taman rekreasi lansia",
+        "Ruang terapi",
+        "Posyandu lansia",
+        "Klinik lansia"
+      ],
+      "jangka_waktu_penyelesaian": "Sampai lansia tidak mampu mandiri atau berpulang",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT RSBKW Kediri",
+      "alamat": "Jl. Industri No. 3, Kediri",
+      "telepon": "0354 789123",
+      "email": "rsbkwkediri@jatimprov.go.id",
+      "kategori": "kewirausahaan",
+      "layanan": "Pembinaan dan pelatihan kewirausahaan bagi masyarakat miskin",
+      "sosial_media": {
+        "facebook": "rsbkwkediri",
+        "instagram": "@rsbkwkediri"
+      },
+      "daya_tampung": 50,
+      "syarat_penerima": [
+        "Usia 18–45 tahun",
+        "Belum bekerja tetap",
+        "Memiliki semangat wirausaha",
+        "Dari keluarga prasejahtera",
+        "Tinggal di Jatim"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Dinsos", "RT/RW", "Organisasi sosial"],
+        "penerimaan": [
+          "Verifikasi domisili",
+          "Tes motivasi usaha",
+          "Pendaftaran"
+        ],
+        "pembinaan": [
+          "Pelatihan usaha kecil",
+          "Simulasi wirausaha",
+          "Pendampingan bisnis"
+        ],
+        "penyaluran": ["Modal awal", "Kredit mikro", "Link ke pasar"]
+      },
+      "indikator_keberhasilan": [
+        "Peserta membuka usaha baru",
+        "Pendapatan meningkat",
+        "Usaha berkelanjutan setelah pelatihan"
+      ],
+      "fasilitas": [
+        "Kelas pelatihan",
+        "Unit produksi",
+        "Ruang inkubasi bisnis",
+        "Asrama peserta",
+        "Pameran mini"
+      ],
+      "jangka_waktu_penyelesaian": "Program 3 bulan pembinaan + 3 bulan pemantauan",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT RSBLK Tuban",
+      "alamat": "Jl. Letda Sucipto No. 7, Tuban",
+      "telepon": "0356 321654",
+      "email": "rsblktuban@jatimprov.go.id",
+      "kategori": "disabilitas",
+      "layanan": "Rehabilitasi sosial penyandang disabilitas daksa dan sensorik",
+      "sosial_media": {
+        "facebook": "rsblktuban",
+        "instagram": "@rsblktuban"
+      },
+      "daya_tampung": 40,
+      "syarat_penerima": [
+        "Disabilitas daksa atau sensorik",
+        "Usia 18–45 tahun",
+        "Memiliki keinginan mandiri",
+        "Tidak sedang sekolah atau bekerja",
+        "Tidak dalam pengaruh zat"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Rujukan Dinsos", "Orang tua", "Komunitas disabilitas"],
+        "penerimaan": [
+          "Asesmen fungsional",
+          "Pemeriksaan dokter",
+          "Pemetaan kebutuhan"
+        ],
+        "pembinaan": [
+          "Pelatihan kerja",
+          "Kemandirian hidup",
+          "Bimbingan sosial"
+        ],
+        "penyaluran": ["Magang", "Kembali ke keluarga", "Ditempatkan kerja"]
+      },
+      "indikator_keberhasilan": [
+        "Disabilitas hidup mandiri",
+        "Meningkatkan keterampilan hidup",
+        "Tersalurkan ke dunia kerja"
+      ],
+      "fasilitas": [
+        "Asrama",
+        "Ruang keterampilan",
+        "Ruang konseling",
+        "Ruang terapi okupasi",
+        "Perpustakaan"
+      ],
+      "jangka_waktu_penyelesaian": "6–9 bulan program intensif",
+      "biaya": "GRATIS"
+    },
+    {
+      "nama": "UPT RSBL Pacitan",
+      "alamat": "Jl. Veteran No. 17, Pacitan",
+      "telepon": "0357 123987",
+      "email": "rsblpacitan@jatimprov.go.id",
+      "kategori": "disabilitas",
+      "layanan": "Rehabilitasi sosial penyandang disabilitas ringan hingga sedang",
+      "sosial_media": {
+        "facebook": "rsblpacitan",
+        "instagram": "@rsblpacitan"
+      },
+      "daya_tampung": 30,
+      "syarat_penerima": [
+        "Penyandang disabilitas usia 18–50 tahun",
+        "Kondisi stabil dan bisa beraktivitas",
+        "Bersedia tinggal di asrama",
+        "Berasal dari Jatim"
+      ],
+      "alur_pelayanan": {
+        "tahap_awal": ["Pengajuan keluarga", "Dinsos", "Komunitas difabel"],
+        "penerimaan": ["Pendaftaran", "Screening", "Asesmen keterampilan"],
+        "pembinaan": [
+          "Pelatihan kerja",
+          "Rehabilitasi sosial",
+          "Pembentukan karakter"
+        ],
+        "penyaluran": ["Kembali ke keluarga", "Mandiri", "Link ke pekerjaan"]
+      },
+      "indikator_keberhasilan": [
+        "Disabilitas mandiri secara sosial dan ekonomi",
+        "Memiliki keterampilan kerja",
+        "Berdaya di masyarakat"
+      ],
+      "fasilitas": [
+        "Asrama difabel",
+        "Studio keterampilan",
+        "Ruang terapi fisik",
+        "Ruang diskusi",
+        "Aula pelatihan"
+      ],
+      "jangka_waktu_penyelesaian": "Rata-rata 6–12 bulan",
+      "biaya": "GRATIS"
+    },
+    {
+  "nama": "UPT Perlindungan dan Rehabilitasi Sosial Marsudi Putra (PRSMP) Surabaya",
+  "alamat": "Jl. Balongsari Dalam No. 1, Surabaya",
+  "telepon": "0317405256",
+  "email": "uptmarsudiputra@gmail.com",
+  "kategori": "anak_berhadapan_hukum",
+  "layanan": "Perlindungan dan rehabilitasi sosial secara GRATIS bagi anak bermasalah sosial serta Anak Berhadapan dengan Hukum (ABH)",
+  "sosial_media": {
+    "instagram": "@prsmp.sby.dinsosjatim"
+  },
+  "daya_tampung": {
+    "reguler": 70,
+    "abh": 60
+  },
+  "syarat_penerima": [
+    "Laki-laki usia 12–18 tahun",
+    "Laki-laki usia ≤ 18 tahun, pelaku ABH (bukan korban/saksi)",
+    "Sehat jasmani dan rohani",
+    "Melakukan pelanggaran norma sosial tetapi tidak dalam kategori tindak pidana",
+    "Rentan melakukan kenakalan atau tindak pidana",
+    "Memiliki penanggung (orang tua/wali)",
+    "Rujukan dari instansi yang berwenang"
+  ],
+  "alur_pelayanan": {
+    "reguler": {
+      "pendekatan_awal": ["Asesmen"],
+      "asesmen": [
+        "Wawancara",
+        "Observasi",
+        "Menggali minat & bakat",
+        "Case conference",
+        "Penempatan sesuai program"
+      ],
+      "intervensi": [
+        "Bimbingan fisik & mental",
+        "Bimbingan sosial & keterampilan",
+        "Perbaikan kondisi fisik",
+        "Home visit",
+        "Resosialisasi",
+        "Pemberian bantuan stimulan"
+      ],
+      "pembinaan_lanjut": true,
+      "terminasi": ["Evaluasi", "Rujukan", "Terminasi"]
+    },
+    "abh": {
+      "penerimaan": [
+        "Pengecekan dokumen",
+        "Pemeriksaan fisik",
+        "Pengarahan",
+        "Pemberian motivasi",
+        "Identifikasi"
+      ],
+      "rehabilitasi": [
+        "Masa orientasi program",
+        "Bimbingan sosial",
+        "Bimbingan mental",
+        "Bimbingan fisik",
+        "Bimbingan vokasional",
+        "Konseling",
+        "Terapi"
+      ],
+      "reintegration": [
+        "Home visit",
+        "Konseling",
+        "Rehabilitasi berbasis keluarga"
+      ],
+      "terminasi": true
+    }
+  },
+  "indikator_keberhasilan": [
+    "Anak memiliki kondisi mental yang stabil dibandingkan dari awal masuk hingga akhir masa layanan",
+    "Anak sudah mampu membedakan perbuatan baik atau buruk, atau jika ia melakukan kesalahan",
+    "Menunjukkan perbuatan yang dapat mengikuti aturan, disiplin sesuai dengan norma yang berlaku di masyarakat"
+  ],
+  "fasilitas": [
+    "Asrama",
+    "Dapur & Ruang Makan",
+    "Bengkel Pengelasan",
+    "Bengkel Otomotif",
+    "Studio Musik",
+    "Gedung Aula",
+    "Ruang Kesehatan",
+    "Gedung Mushola",
+    "Lapangan"
+  ],
+  "jangka_waktu_penyelesaian": "6 bulan untuk penerima reguler. Untuk ABH disesuaikan dengan putusan sidang.",
+  "biaya": "GRATIS"
+}
+  ]
+}

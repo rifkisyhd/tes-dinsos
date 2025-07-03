@@ -6,7 +6,7 @@ export default ({ config }) => ({
     slug: "CatalogDinsos",
     version: "1.0.0",
     orientation: "portrait",
-    icon: "./assets/images/logo-app.jpg",
+    icon: "./assets/images/splash-app.jpg",
     userInterfaceStyle: "light",
     newArchEnabled: true,
     splash: {

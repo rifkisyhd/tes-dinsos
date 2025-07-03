@@ -17,7 +17,6 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
-    // paddingVertical: 16,
     paddingTop: Platform.OS === 'ios' ? 30 : 25,
     paddingBottom: Platform.OS === 'ios' ? 20 : 20,
   },
